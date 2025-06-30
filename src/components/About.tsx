@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Social Media Marketing",
-      description: "Dezvolt strategii eficiente pentru Instagram și Facebook.",
+      description: "Dezvolt strategii eficiente de Marketing online.",
     },
     {
       icon: <Palette className="w-8 h-8" />,
@@ -32,7 +32,7 @@ const About = () => {
     {
       icon: <Target className="w-8 h-8" />,
       title: "Conținut Social Media",
-      description: "Creez strategii de conținut pentru rețele sociale care cresc interacțiunea și atrag clienți.",
+      description: "Setez campanii targetate pe Instagram,Facebook și site care transformă vizitatorii în cumpărători.",
     },
   ];
 
