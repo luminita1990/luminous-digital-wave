@@ -21,47 +21,6 @@ Un site web modern și responsiv pentru experții în Social Media Marketing și
 - **Lucide React** - Iconuri moderne și elegante
 - **Vite** - Build tool rapid
 
-## 📧 Configurarea EmailJS
-
-Pentru ca formularul de contact să funcționeze, urmează acești pași:
-
-1. **Creează un cont pe [EmailJS](https://www.emailjs.com/)**
-
-2. **Configurează Service-ul**:
-   - Mergi la "Email Services"
-   - Adaugă un service (Gmail, Outlook, etc.)
-   - Notează `Service ID`
-
-3. **Creează un Template**:
-   - Mergi la "Email Templates"
-   - Creează un template nou cu următoarele variabile:
-     - `{{from_name}}` - numele expeditorului
-     - `{{from_email}}` - email-ul expeditorului
-     - `{{subject}}` - subiectul mesajului
-     - `{{message}}` - conținutul mesajului
-     - `{{to_name}}` - "Diana & Luminița"
-   - Notează `Template ID`
-
-4. **Obține Public Key**:
-   - Mergi la "Account" → "General"
-   - Copiază `Public Key`
-
-5. **Actualizează Contact.tsx**:
-   Înlocuiește în fișierul `src/components/Contact.tsx`:
-   ```typescript
-   const result = await emailjs.send(
-     'YOUR_SERVICE_ID',    // Înlocuiește cu Service ID-ul tău
-     'YOUR_TEMPLATE_ID',   // Înlocuiește cu Template ID-ul tău
-     {
-       from_name: formData.name,
-       from_email: formData.email,
-       subject: formData.subject,
-       message: formData.message,
-       to_name: 'Diana & Luminița',
-     },
-     'YOUR_PUBLIC_KEY'     // Înlocuiește cu Public Key-ul tău
-   );
-   ```
 
 ## 🎨 Personalizare
 
@@ -91,16 +50,9 @@ Site-ul include:
 
 ## 🚀 Deployment
 
-Site-ul poate fi publicat pe:
-- **Lovable** (recomandat) - click pe "Publish"
-- **Vercel** - conectează repository-ul GitHub
-- **Netlify** - drag & drop build folder
-- **GitHub Pages** - prin GitHub Actions
+Site-ul e publicat pe:
+- **Vercel** - conectat cu repository-ul GitHub
 
-## 📞 Suport
 
-Pentru întrebări despre personalizare sau probleme tehnice, contactează echipa de development.
-
----
 
 **Dezvoltat cu ❤️ de Diana & Luminița**
