@@ -1,6 +1,8 @@
 
 import { Heart, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo1.png";
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,7 +34,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-6">
                 <div className="w-16 h-16 rounded-lg overflow-hidden">
                   <div className="w-20 h-20">
-                    <img src="/src/assets/logo1.png" alt="Logo Diana & Luminița" className="w-full h-full object-contain" />
+                  <img src={logo} alt="Logo Diana & Luminița" className="w-full h-full object-contain" />
                   </div>
 
                 </div>
