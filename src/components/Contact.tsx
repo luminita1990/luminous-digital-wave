@@ -38,9 +38,11 @@ const Contact = () => {
         {
           from_name: formData.name,
           from_email: formData.email,
+          reply_to: formData.email, // 👈 Acest câmp e esențial
           subject: formData.subject,
           message: formData.message,
           to_name: 'Diana & Luminița',
+          
         },
         'bBFn5-eYZDUzy7b6P' // Înlocuiește cu Public Key-ul tău de la EmailJS
       );
