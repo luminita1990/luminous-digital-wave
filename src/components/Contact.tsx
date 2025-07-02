@@ -181,7 +181,7 @@ const Contact = () => {
                 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                    Subiect *
+                  Vă rugăm să indicați un număr de telefon *
                   </label>
                   <Input
                     id="subject"
@@ -191,7 +191,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 focus:border-blue-500"
-                    placeholder="În ce te putem ajuta?"
+                    placeholder=""
                   />
                 </div>
                 
